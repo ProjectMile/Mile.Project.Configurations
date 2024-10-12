@@ -12,3 +12,5 @@
   https://github.com/ProjectMile/Mile.Project.Windows/tree/20241012-BeforeNuGetSDK.
 - Inherit and integrate Mile.Project.Manifest from
   https://github.com/ProjectMile/Mile.Project.Windows/tree/20241012-BeforeNuGetSDK.
+- Inherit and integrate Mile.Project.Cpp from
+  https://github.com/ProjectMile/Mile.Project.Windows/tree/20241012-BeforeNuGetSDK.
