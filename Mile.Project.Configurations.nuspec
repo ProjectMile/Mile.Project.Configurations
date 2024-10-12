@@ -47,6 +47,8 @@
     <file src="Mile.Project.Wap.props" target="Sdk\Mile.Project.Wap.props" />
     <file src="Mile.Project.Wap.targets" target="Sdk\Mile.Project.Wap.targets" />
 
+    <file src="Mile.Project.Build.props" target="Sdk\Mile.Project.Build.props" />
+
     <file src="ReadMe.md" target="." />
     <file src="License.md" target="." />
     <file src="ReleaseNotes.md" target="." />

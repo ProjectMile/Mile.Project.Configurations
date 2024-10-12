@@ -33,6 +33,10 @@ You only need to import the props/targets you want with the following way.
 - Mile.Project.Wap.props
 - Mile.Project.Wap.targets
 
+### Mile.Project.Build
+
+- Mile.Project.Build.props
+
 ## Available Options
 
 ### How to define the project type in the "Globals" label property group.

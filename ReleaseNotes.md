@@ -16,3 +16,5 @@
   https://github.com/ProjectMile/Mile.Project.Windows/tree/20241012-BeforeNuGetSDK.
 - Inherit and integrate Mile.Project.Wap from 
   https://github.com/ProjectMile/Mile.Project.Windows/tree/20241012-BeforeNuGetSDK.
+- Inherit and integrate Mile.Project.Build from
+  https://github.com/ProjectMile/Mile.Project.Windows/tree/20241012-BeforeNuGetSDK.
