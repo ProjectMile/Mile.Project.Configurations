@@ -26,6 +26,9 @@
   </metadata>
   <files>
 
+    <file src="Sdk.props" target="Sdk\Sdk.props" />
+    <file src="Sdk.targets" target="Sdk\Sdk.targets" />
+
     <file src="Mile.Project.Platform.ARM.props" target="Sdk\Mile.Project.Platform.ARM.props" />
     <file src="Mile.Project.Platform.ARM64.props" target="Sdk\Mile.Project.Platform.ARM64.props" />
     <file src="Mile.Project.Platform.ARM64EC.props" target="Sdk\Mile.Project.Platform.ARM64EC.props" />
