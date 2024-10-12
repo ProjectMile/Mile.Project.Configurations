@@ -26,6 +26,12 @@
   </metadata>
   <files>
 
+    <file src="Mile.Project.Platform.ARM.props" target="Sdk\Mile.Project.Platform.ARM.props" />
+    <file src="Mile.Project.Platform.ARM64.props" target="Sdk\Mile.Project.Platform.ARM64.props" />
+    <file src="Mile.Project.Platform.ARM64EC.props" target="Sdk\Mile.Project.Platform.ARM64EC.props" />
+    <file src="Mile.Project.Platform.x64.props" target="Sdk\Mile.Project.Platform.x64.props" />
+    <file src="Mile.Project.Platform.x86.props" target="Sdk\Mile.Project.Platform.x86.props" />
+
     <file src="ReadMe.md" target="." />
     <file src="License.md" target="." />
     <file src="ReleaseNotes.md" target="." />
