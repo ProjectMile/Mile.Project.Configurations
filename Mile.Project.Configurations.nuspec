@@ -35,6 +35,9 @@
     <file src="Mile.Project.Platform.x64.props" target="Sdk\Mile.Project.Platform.x64.props" />
     <file src="Mile.Project.Platform.x86.props" target="Sdk\Mile.Project.Platform.x86.props" />
 
+    <file src="Mile.Project.Version.h" target="Sdk\Mile.Project.Version.h" />
+    <file src="Mile.Project.Version.rc" target="Sdk\Mile.Project.Version.rc" />
+
     <file src="ReadMe.md" target="." />
     <file src="License.md" target="." />
     <file src="ReleaseNotes.md" target="." />

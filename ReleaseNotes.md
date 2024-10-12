@@ -8,3 +8,5 @@
 - Fix the condition check for Mile.Project.Platform x86.
 - Add empty SDK configurations for simplifying the configurations.
 - Fix the file header for Mile.Project.Platform.
+- Inherit and integrate Mile.Project.Version from
+  https://github.com/ProjectMile/Mile.Project.Windows/tree/20241012-BeforeNuGetSDK.
