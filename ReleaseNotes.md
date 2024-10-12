@@ -18,5 +18,6 @@
   https://github.com/ProjectMile/Mile.Project.Windows/tree/20241012-BeforeNuGetSDK.
 - Inherit and integrate Mile.Project.Build from
   https://github.com/ProjectMile/Mile.Project.Windows/tree/20241012-BeforeNuGetSDK.
-- Introduce MileProjectCppDisablePackageReferencesSupport and
-  MileProjectWapDisableNativeProjectWorkarounds options.
+- Set BackgroundTaskDebugEngines to NativeOnly in Mile.Project.Wap.props.
+- Introduce MileProjectOutputPath, MileProjectCppDisablePackageReferencesSupport
+  and MileProjectWapDisableNativeProjectWorkarounds options.
