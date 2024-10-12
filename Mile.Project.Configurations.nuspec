@@ -44,6 +44,9 @@
     <file src="Mile.Project.Cpp.props" target="Sdk\Mile.Project.Cpp.props" />
     <file src="Mile.Project.Cpp.targets" target="Sdk\Mile.Project.Cpp.targets" />
 
+    <file src="Mile.Project.Wap.props" target="Sdk\Mile.Project.Wap.props" />
+    <file src="Mile.Project.Wap.targets" target="Sdk\Mile.Project.Wap.targets" />
+
     <file src="ReadMe.md" target="." />
     <file src="License.md" target="." />
     <file src="ReleaseNotes.md" target="." />
