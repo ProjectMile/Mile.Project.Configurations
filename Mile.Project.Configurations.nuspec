@@ -38,6 +38,8 @@
     <file src="Mile.Project.Version.h" target="Sdk\Mile.Project.Version.h" />
     <file src="Mile.Project.Version.rc" target="Sdk\Mile.Project.Version.rc" />
 
+    <file src="Mile.Project.Manifest.rc" target="Sdk\Mile.Project.Manifest.rc" />
+
     <file src="ReadMe.md" target="." />
     <file src="License.md" target="." />
     <file src="ReleaseNotes.md" target="." />
