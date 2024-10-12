@@ -11,8 +11,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mile.Project.Configurations</id>
-    <!-- <version>$version$</version> -->
-    <version>1.0.1-preview</version>
+    <version>$version$</version>
     <description>Simplified MSBuild configurations distributed with NuGet package</description>
     <authors>Kenji Mouri</authors>
     <projectUrl>https://github.com/ProjectMile/Mile.Project.Configurations</projectUrl>
