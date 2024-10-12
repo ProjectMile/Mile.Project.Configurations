@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PROJECT:   Mouri Internal Library Essentials
+  FILE:      Mile.Project.Configurations.proj
+  PURPOSE:   Definition for Mile.Project.Configurations Project
+
+  LICENSE:   The MIT License
+
+  MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
+-->
+<Project Sdk="Microsoft.Build.NoTargets/3.7.56" DefaultTargets="Restore;Build">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <OutputFileNamesWithoutVersion>true</OutputFileNamesWithoutVersion>
+    <Version>1.0.$([System.DateTime]::Today.Subtract($([System.DateTime]::Parse('2020-11-17'))).TotalDays).0</Version>
+    <NuspecProperties>version=$(Version);</NuspecProperties>
+    <NuspecFile>Mile.Project.Configurations.nuspec</NuspecFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="NuGet.Build.Tasks.Pack" Version="6.11.1"/>
+  </ItemGroup>
+</Project>

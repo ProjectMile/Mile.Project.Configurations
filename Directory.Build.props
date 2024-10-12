@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PROJECT:   Mouri Internal Library Essentials
+  FILE:      Directory.Build.props
+  PURPOSE:   Global settings for Mile.Project.Configurations Project
+
+  LICENSE:   The MIT License
+
+  MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
+-->
+<Project>
+  <PropertyGroup>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)Output\Binaries\$(MSBuildProjectName.Split("_")[0])\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)Output\Objects\$(MSBuildProjectName.Split("_")[0])\</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(BaseIntermediateOutputPath)obj\</MSBuildProjectExtensionsPath>
+    <OutputPath>$(BaseOutputPath)</OutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)</IntermediateOutputPath>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)Output\</PackageOutputPath>
+  </PropertyGroup>
+</Project>
