@@ -1,6 +1,6 @@
 ﻿# Mile.Project.Configurations Release Notes
 
-**Mile.Project.Configurations 1.0.xxxx.0**
+**Mile.Project.Configurations 1.0.1426.0**
 
 - Initial release.
 - Inherit and integrate Mile.Project.Platform from
