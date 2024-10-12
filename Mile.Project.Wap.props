@@ -14,9 +14,17 @@
     <WapProjPath Condition="'$(WapProjPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\DesktopBridge\</WapProjPath>
   </PropertyGroup>
   <Import Project="$(WapProjPath)\Microsoft.DesktopBridge.props" />
-  <PropertyGroup>
+  <PropertyGroup Condition="'$(MileProjectWapDisableNativeProjectWorkarounds)' != 'true'">
     <!-- https://github.com/microsoft/Terminal/issues/700 -->
     <DebuggerType>NativeOnly</DebuggerType>
     <BackgroundTaskDebugEngines>NativeOnly</BackgroundTaskDebugEngines>
+  </PropertyGroup>
+  <PropertyGroup Label="NuGet" Condition="'$(MileProjectWapDisableNativeProjectWorkarounds)' != 'true'">
+    <!-- https://github.com/microsoft/react-native-windows/pull/8195 -->
+    <AssetTargetFallback>$(AssetTargetFallback);native;uap$(TargetPlatformVersion);</AssetTargetFallback>
+    <!-- https://github.com/microsoft/react-native-windows/pull/8195 -->
+    <TargetFrameworkMoniker>native,Version=v0.0</TargetFrameworkMoniker>
+    <NuGetTargetMoniker>native,Version=v0.0</NuGetTargetMoniker>
+    <RuntimeIdentifiers>win;win-x86;win-x64;win-arm;win-arm64;win10-x86;win10-x64;win10-arm;win10-arm64</RuntimeIdentifiers>
   </PropertyGroup>
 </Project>

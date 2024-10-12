@@ -146,3 +146,15 @@ Note: YY-Thunks support will be enabled if you have enabled VC-LTL support.
 ```
 <MileProjectOutputPath>$(MSBuildThisFileDirectory)Output\</MileProjectOutputPath>
 ```
+
+### How to disable PackageReferences support for C/C++ projects.
+
+```
+<MileProjectCppDisablePackageReferencesSupport>true</MileProjectCppDisablePackageReferencesSupport>
+```
+
+### How to disable native project workarounds for Windows Application Packaging projects.
+
+```
+<MileProjectWapDisableNativeProjectWorkarounds>true</MileProjectWapDisableNativeProjectWorkarounds>
+```
