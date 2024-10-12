@@ -140,3 +140,9 @@ Note: YY-Thunks support will be enabled if you have enabled VC-LTL support.
 ```
 <MileProjectEnableYYThunksSupport>true</MileProjectEnableYYThunksSupport>
 ```
+
+### How to define the output folder.
+
+```
+<MileProjectOutputPath>$(MSBuildThisFileDirectory)Output\</MileProjectOutputPath>
+```
