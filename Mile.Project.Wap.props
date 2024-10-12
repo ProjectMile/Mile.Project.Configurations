@@ -17,5 +17,6 @@
   <PropertyGroup>
     <!-- https://github.com/microsoft/Terminal/issues/700 -->
     <DebuggerType>NativeOnly</DebuggerType>
+    <BackgroundTaskDebugEngines>NativeOnly</BackgroundTaskDebugEngines>
   </PropertyGroup>
 </Project>
