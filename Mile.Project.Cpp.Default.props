@@ -99,9 +99,9 @@
     <ConfigurationType Condition="'$(MileProjectType)' == 'WDMDriver'">Driver</ConfigurationType>
     <ConfigurationType Condition="'$(MileProjectType)' == 'KMDFDriver'">Driver</ConfigurationType>
     <ConfigurationType Condition="'$(MileProjectType)' == 'UMDFDriver'">DynamicLibrary</ConfigurationType>
-    <PlatformToolset Condition="'$(PlatformToolset)' == ''">WindowsApplicationForDrivers10.0</PlatformToolset>
-    <PlatformToolset Condition="('$(PlatformToolset)' == '') And ('$(MileProjectType)' == 'UMDFDriver')">WindowsUserModeDriver10.0</PlatformToolset>
-    <PlatformToolset Condition="('$(PlatformToolset)' == '') And ('$(MileProjectUseKernelMode)' == 'true')">WindowsKernelModeDriver10.0</PlatformToolset>
+    <PlatformToolset>WindowsApplicationForDrivers10.0</PlatformToolset>
+    <PlatformToolset Condition="'$(MileProjectType)' == 'UMDFDriver'">WindowsUserModeDriver10.0</PlatformToolset>
+    <PlatformToolset Condition="'$(MileProjectUseKernelMode)' == 'true'">WindowsKernelModeDriver10.0</PlatformToolset>
     <DriverType Condition="'$(MileProjectUseKernelMode)' == 'true'">KMDF</DriverType>
     <DriverType Condition="'$(MileProjectType)' == 'WDMDriver'">WDM</DriverType>
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
