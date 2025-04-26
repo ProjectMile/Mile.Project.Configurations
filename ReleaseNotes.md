@@ -1,5 +1,10 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.1622.0**
+
+- Remove unnecessary customization support for PlatformToolset option in Windows
+  driver projects to fix some issues. (Contributed by MiroKaku.)
+
 **Mile.Project.Configurations 1.0.1621.0**
 
 - Fix the condition check for Mile.Project.Build.
