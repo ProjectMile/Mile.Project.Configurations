@@ -1,5 +1,15 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.1621.0**
+
+- Fix the condition check for Mile.Project.Build.
+- Update VC-LTL and YY-Thunks to their latest stable version. (Contributed by
+  MiroKaku.)
+- Add customization support for WindowsTargetPlatformVersion option. (Suggested
+  by sonyps5201314.)
+- Add customization support for PlatformToolset option. (Suggested by
+  sonyps5201314.)
+
 **Mile.Project.Configurations 1.0.1426.0**
 
 - Initial release.
