@@ -1,9 +1,9 @@
 @rem 
-@rem PROJECT:   Mouri Internal Library Essentials
-@rem FILE:      BuildPackage.cmd
-@rem PURPOSE:   Build Mile.Project.Configurations Project script
+@rem PROJECT:    Mouri Internal Library Essentials
+@rem FILE:       BuildPackage.cmd
+@rem PURPOSE:    Build Mile.Project.Configurations Project script
 @rem 
-@rem LICENSE:   The MIT License
+@rem LICENSE:    The MIT License
 @rem 
 @rem MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
 @rem 

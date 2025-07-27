@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-  PROJECT:   Mouri Internal Library Essentials
-  FILE:      Sdk.targets
-  PURPOSE:   Definition for Mile.Project SDK targets
+  PROJECT:    Mouri Internal Library Essentials
+  FILE:       Sdk.targets
+  PURPOSE:    Definition for Mile.Project SDK targets
 
-  LICENSE:   The MIT License
+  LICENSE:    The MIT License
 
   MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
 -->
