@@ -1,5 +1,14 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.1766.0**
+
+- Adapt to Visual Studio 2026 via fixing the C and C++ language standard
+  configurations. (Contributed by dongle-the-gadget.)
+- Update C++/WinRT to 2.0.250303.1.
+- Update VC-LTL to 5.2.2.
+- Update YY-Thunks to 1.1.8.
+- Fix the source code file header comment format.
+
 **Mile.Project.Configurations 1.0.1622.0**
 
 - Remove unnecessary customization support for PlatformToolset option in Windows
