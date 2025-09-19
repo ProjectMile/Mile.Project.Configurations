@@ -15,5 +15,31 @@
       <ResourceCompile Condition="'$(MileProjectUseProjectProperties)' == 'true'" Include="$(MSBuildThisFileDirectory)Mile.Project.Version.rc" />
     </ItemGroup>
   </Target>
+  <!-- ## BEGIN HACK - Place App.xbf at root of PRI resource tree ## -->
+  <!--
+    Reference: https://github.com/microsoft/terminal
+               /blob/e80aadd98ba2a461cc5063dac1895b5f535dcff2
+               /src/cascadia/TerminalApp/TerminalAppLib.vcxproj#L499
+  -->
+  <!--
+    By default, the PRI file will contain resource paths beginning with the
+    project name. Since we enabled XBF embedding, this *also* includes App.xbf.
+    Well, App.xbf is hard-coded by the framework to be found at the resource
+    ROOT. To make that happen, we have to disable the prepending of the project
+    name to the App xaml files.
+  -->
+  <PropertyGroup>
+    <_GenerateProjectPriFileDependsOn>MileProjectPlaceAppXbfAtRootOfResourceTree;$(_GenerateProjectPriFileDependsOn)</_GenerateProjectPriFileDependsOn>
+  </PropertyGroup>
+  <Target Name="MileProjectPlaceAppXbfAtRootOfResourceTree" DependsOnTargets="GetPackagingOutputs">
+    <ItemGroup>
+      <_RelocatedAppXamlData Include="@(PackagingOutputs)" Condition="'%(Filename)' == 'App' and ('%(Extension)' == '.xaml' or '%(Extension)' == '.xbf')" />
+      <PackagingOutputs Remove="@(_RelocatedAppXamlData)" />
+      <PackagingOutputs Include="@(_RelocatedAppXamlData)">
+        <TargetPath>%(Filename)%(Extension)</TargetPath>
+      </PackagingOutputs>
+    </ItemGroup>
+  </Target>
+  <!-- ## END HACK - Place App.xbf at root of PRI resource tree ## -->
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
