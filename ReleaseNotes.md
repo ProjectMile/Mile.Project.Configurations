@@ -1,5 +1,13 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.1768.0**
+
+- Add workaround to Mile.Project.Wap.targets for solving the issue that
+  unnecessary XAML files contained in the final MSIX package.
+- Add workaround to Mile.Project.Cpp.targets for solving the App.xaml resource
+  not found issue if users want to put App.xaml to dynamic library project
+  instead of application project.
+
 **Mile.Project.Configurations 1.0.1766.0**
 
 - Adapt to Visual Studio 2026 via fixing the C and C++ language standard
