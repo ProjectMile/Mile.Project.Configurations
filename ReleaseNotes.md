@@ -1,5 +1,12 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.1827.0**
+
+- Fix the issue when using MileProjectUseClangCLToolset option. (Thanks to
+  dinhngtu.)
+- Update VC-LTL to 5.3.1-Beta2.
+- Update YY-Thunks to 1.1.9.
+
 **Mile.Project.Configurations 1.0.1768.0**
 
 - Add workaround to Mile.Project.Wap.targets for solving the issue that
