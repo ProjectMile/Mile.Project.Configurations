@@ -81,6 +81,13 @@
     <TargetFrameworkMoniker Condition ="'$(DesignTimeBuild)' == 'true'">.NETCore,Version=v5.0</TargetFrameworkMoniker>
     <NuGetTargetMoniker Condition ="'$(DesignTimeBuild)' == 'true'">.NETCore,Version=v5.0</NuGetTargetMoniker>
     <RuntimeIdentifiers>win;win-x86;win-x64;win-arm;win-arm64;win10-x86;win10-x64;win10-arm;win10-arm64</RuntimeIdentifiers>
+    <TargetFramework>native</TargetFramework>
+    <TargetFrameworkIdentifier>$([MSBuild]::GetTargetFrameworkIdentifier('$(TargetFramework)'))</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)', 2))</TargetFrameworkVersion>
+    <TargetPlatformIdentifier>$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)'))</TargetPlatformIdentifier>
+    <TargetPlatformVersion>$(WindowsTargetPlatformVersion)</TargetPlatformVersion>
+    <TargetFrameworkIdentifier Condition="'$(DesignTimeBuild)' == 'true'">.NETCore</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion Condition="'$(DesignTimeBuild)' == 'true'">v5.0</TargetFrameworkVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Label="Configuration">
