@@ -1,5 +1,12 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.1917.0**
+
+- Add workaround for using NuGet Package References Support in Visual Studio
+  2026 version 18.3 or later. (Cooperated with AndromedaMelody.)
+- Update VC-LTL to 5.3.1.
+- Update YY-Thunks to 1.2.1-Beta.1.
+
 **Mile.Project.Configurations 1.0.1827.0**
 
 - Fix the issue when using MileProjectUseClangCLToolset option. (Thanks to
