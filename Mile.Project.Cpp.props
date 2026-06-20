@@ -51,7 +51,7 @@
       <PreprocessorDefinitions Condition="'$(MileProjectManifestFile)' != ''">_MILE_PROJECT_MANIFEST_FILE=$([System.String]::Copy('$(MileProjectManifestFile)').Replace('\','\\'));%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>$(ProjectDir);$(MSBuildThisFileDirectory);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
-    <ResourceCompile Condition="('$(MileProjectType)' != 'StaticLibrary') And ('$(MileProjectUseProjectProperties)' == 'true')">
+    <ResourceCompile Condition="'$(MileProjectType)' != 'StaticLibrary' and '$(MileProjectUseProjectProperties)' == 'true'">
       <PreprocessorDefinitions>_MILE_PROJECT_COMPANY_NAME=$(MileProjectCompanyName);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions>_MILE_PROJECT_FILE_DESCRIPTION=$(MileProjectFileDescription);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessorDefinitions>_MILE_PROJECT_INTERNAL_NAME=$(MileProjectInternalName);%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -102,11 +102,11 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <ControlFlowGuard Condition="'$(Configuration)' == 'Release'">Guard</ControlFlowGuard>
-      <GuardEHContMetadata Condition="'$(Platform)' == 'ARM64' Or '$(Platform)' == 'ARM64EC' Or '$(Platform)' == 'x64'">true</GuardEHContMetadata>
-      <GuardSignedReturns Condition="'$(Platform)' == 'ARM64' Or '$(Platform)' == 'ARM64EC'">true</GuardSignedReturns>
+      <GuardEHContMetadata Condition="'$(Platform)' == 'ARM64' or '$(Platform)' == 'ARM64EC' or '$(Platform)' == 'x64'">true</GuardEHContMetadata>
+      <GuardSignedReturns Condition="'$(Platform)' == 'ARM64' or '$(Platform)' == 'ARM64EC'">true</GuardSignedReturns>
     </ClCompile>
     <Link>
-      <CETCompat Condition="'$(Platform)' == 'Win32' Or '$(Platform)' == 'x64'">true</CETCompat>
+      <CETCompat Condition="'$(Platform)' == 'Win32' or '$(Platform)' == 'x64'">true</CETCompat>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
