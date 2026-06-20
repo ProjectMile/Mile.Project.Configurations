@@ -117,7 +117,7 @@
       <Version>1.2.1-Beta.1</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Windows.CppWinRT" Condition="'$(MileProjectEnableCppWinRTSupport)' == 'true'">
-      <Version>2.0.250303.1</Version>
+      <Version>3.0.260520.1</Version>
     </PackageReference>
   </ItemGroup>
 </Project>
