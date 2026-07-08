@@ -1,5 +1,13 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.2059.0**
+
+- Fix the LanguageStandard_C variable selection logic issue.
+- Decouple more project configurations from specific configuration profiles.
+- Simplify the condition logic for project configurations.
+- Update C++/WinRT to 3.0.260520.1.
+- Update YY-Thunks to 1.2.2-Beta.2.
+
 **Mile.Project.Configurations 1.0.1917.0**
 
 - Add workaround for using NuGet Package References Support in Visual Studio
