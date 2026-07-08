@@ -10,8 +10,8 @@
 -->
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LinkIncremental Condition="'$(Configuration)' == 'Debug'">true</LinkIncremental>
-    <LinkIncremental Condition="'$(Configuration)' == 'Release'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(UseDebugLibraries)' == 'true'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(UseDebugLibraries)' != 'true'">false</LinkIncremental>
     <LinkIncremental Condition="'$(MileProjectUseWindowsDriverKit)' == 'true'">false</LinkIncremental>
     <Inf2CatUseLocalTime Condition="'$(MileProjectUseWindowsDriverKit)' == 'true'">true</Inf2CatUseLocalTime>
     <GenerateManifest>false</GenerateManifest>
@@ -79,14 +79,14 @@
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)' == 'Debug'">
+  <ItemDefinitionGroup Condition="'$(UseDebugLibraries)' == 'true'">
     <ClCompile>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary Condition="'$(MileProjectEnableVCLTLSupport)' == 'true'">MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
   </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)' == 'Release'">
+  <ItemDefinitionGroup Condition="'$(UseDebugLibraries)' != 'true'">
     <ClCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Optimization>MaxSpeed</Optimization>
@@ -101,7 +101,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup>
     <ClCompile>
-      <ControlFlowGuard Condition="'$(Configuration)' == 'Release'">Guard</ControlFlowGuard>
+      <ControlFlowGuard Condition="'$(UseDebugLibraries)' != 'true'">Guard</ControlFlowGuard>
       <GuardEHContMetadata Condition="'$(Platform)' == 'ARM64' or '$(Platform)' == 'ARM64EC' or '$(Platform)' == 'x64'">true</GuardEHContMetadata>
       <GuardSignedReturns Condition="'$(Platform)' == 'ARM64' or '$(Platform)' == 'ARM64EC'">true</GuardSignedReturns>
     </ClCompile>
