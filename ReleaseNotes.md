@@ -1,5 +1,10 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.2060.0**
+
+- Rollback C++/WinRT to 2.0.250303.1 because 
+  https://github.com/microsoft/cppwinrt/issues/1605.
+
 **Mile.Project.Configurations 1.0.2059.0**
 
 - Fix the LanguageStandard_C variable selection logic issue.
