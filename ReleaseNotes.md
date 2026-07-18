@@ -1,5 +1,9 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.2069.0**
+
+- Update C++/WinRT to 3.0.260715.1.
+
 **Mile.Project.Configurations 1.0.2060.0**
 
 - Rollback C++/WinRT to 2.0.250303.1 because 
