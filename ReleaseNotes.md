@@ -1,5 +1,10 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.0.2075.0**
+
+- Update YY-Thunks to 1.2.2.
+- Fix comment header indent.
+
 **Mile.Project.Configurations 1.0.2069.0**
 
 - Update C++/WinRT to 3.0.260715.1.
