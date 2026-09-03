@@ -103,14 +103,6 @@ You only need to import the props/targets you want with the following way.
 <MileProjectVersionTag>Preview 1</MileProjectVersionTag>
 ```
 
-### How to enable VC-LTL support.
-
-```
-<MileProjectEnableVCLTLSupport>true</MileProjectEnableVCLTLSupport>
-```
-
-Note: YY-Thunks support will be enabled if you have enabled VC-LTL support.
-
 ### How to enable C++/WinRT support.
 
 ```

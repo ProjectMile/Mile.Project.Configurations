@@ -41,5 +41,8 @@
     </ItemGroup>
   </Target>
   <!-- ## END HACK - Place App.xbf at root of PRI resource tree ## -->
+  <Target Name="MileProjectValidateConfiguration" BeforeTargets="PrepareForBuild;CollectPackageReferences">
+    <Error Condition="'$(MileProjectEnableVCLTLSupport)' == 'true'" ContinueOnError="ErrorAndContinue" Text="MileProjectEnableVCLTLSupport option has been removed. Remove this property, manually install the VC-LTL NuGet package, and configure RuntimeLibrary." />
+  </Target>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
 </Project>
