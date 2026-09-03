@@ -127,12 +127,6 @@ You only need to import the props/targets you want with the following way.
 <MileProjectUseKernelMode>true</MileProjectUseKernelMode>
 ```
 
-### How to enable YY-Thunks support.
-
-```
-<MileProjectEnableYYThunksSupport>true</MileProjectEnableYYThunksSupport>
-```
-
 ### How to define the output folder.
 
 ```
