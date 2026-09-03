@@ -1,5 +1,16 @@
 ﻿# Mile.Project.Configurations Release Notes
 
+**Mile.Project.Configurations 1.1.2116.0**
+
+- Remove support for the `MileProjectEnableVCLTLSupport` option. To migrate,
+  remove this property, manually install the VC-LTL NuGet package, and configure
+  `RuntimeLibrary`.
+- Remove support for the `MileProjectEnableYYThunksSupport` option. To migrate,
+  remove this property and manually install the YY-Thunks NuGet package.
+- Update the usage documentation to describe how to specify the package version
+  in `global.json`.
+- Update C++/WinRT to 3.0.260818.1.
+
 **Mile.Project.Configurations 1.0.2075.0**
 
 - Update YY-Thunks to 1.2.2.
