@@ -6,10 +6,26 @@ Simplified MSBuild configurations distributed with NuGet package.
 
 ## Usage
 
-You only need to import the props/targets you want with the following way.
+Import the props/targets you want and specify the package version directly:
 
+```xml
+<Import Sdk="Mile.Project.Configurations" Version="Please replace to the Mile.Project.Configurations package version you want" Project="Please replace to the props/targets you want in the Mile.Project.Configurations package" />
 ```
-<Import Sdk="Mile.Project.Configurations" Version="Please replace to the Mile.Project.Configurations package version you want" Project=""Please replace to the props/targets you want in the Mile.Project.Configurations package you want" />
+
+Alternatively, specify the package version in `global.json`:
+
+```json
+{
+  "msbuild-sdks": {
+    "Mile.Project.Configurations": "Please replace to the Mile.Project.Configurations package version you want"
+  }
+}
+```
+
+The version can then be omitted from the import:
+
+```xml
+<Import Sdk="Mile.Project.Configurations" Project="Please replace to the props/targets you want in the Mile.Project.Configurations package" />
 ```
 
 ## Available props/targets
