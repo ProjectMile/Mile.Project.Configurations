@@ -13,7 +13,7 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <OutputFileNamesWithoutVersion>true</OutputFileNamesWithoutVersion>
-    <Version>1.0.$([System.DateTime]::Today.Subtract($([System.DateTime]::Parse('2020-11-17'))).TotalDays).0</Version>
+    <Version>1.1.$([System.DateTime]::Today.Subtract($([System.DateTime]::Parse('2020-11-17'))).TotalDays).0</Version>
     <NuspecProperties>version=$(Version);</NuspecProperties>
     <NuspecFile>Mile.Project.Configurations.nuspec</NuspecFile>
   </PropertyGroup>
